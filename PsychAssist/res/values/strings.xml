@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">PsychAssist</string>
+    <!-- Credentials -->
+    <string name="set_credentials">Set Credentials</string>    
+    <string name="preference_key">com.psychassist.keys</string>
+    <string name="title_activity_set_credentials">Set Credentials</string>
+    <string name="action_settings">Settings</string>
+    <string name="credentials">Please provide the following values:</string>
+    <string name="vault_id">Vault Id</string>        
+    <string name="user_id">User Id</string>
+    <string name="doc_id">Document Id</string>
+    <string name="save">Save</string>
+    <string name="connect">Connect</string>
+    
+    <string name="var_vault_id">vaultId</string>
+    <string name="var_user_id">userId</string>
+    <string name="var_doc_id">docId</string>
+    
+    <!-- Contacts page -->
+    <string name="view_contacts">View Contacts</string>
+    <string name="title_activity_contacts_list">ContactsList</string>
+    <string name="search_contacts_list">Search contact names&#x2026;</string>
+    <string name="patient_list">Patients</string>
+    <string name="title_activity_patient">FirstName LastName</string>
+    
+    <string name="patient_name_hint">Enter name to search patients</string>
+    <string name="patient_title_label">Patient Name</string>
+    
+    <!-- View/Add/Update Patients -->
+    <string name="first_name_hint">First Name</string>
+    <string name="last_name_hint">Last Name</string>
+    <string name="email_hint">Email</string>
+    <string name="address_hint">Address</string>
+    <string name="city_hint">City</string>
+    <string name="state_hint">State</string>
+    <string name="zip_code_hint">Zip Code</string>
+    <string name="mobile_hint">Mobile Number</string>
+    <string name="work_hint">Work Number</string>
+    <string name="home_hint">Home Number</string>
+    <string name="notes_hint">Notes</string>
+    <string name="diagnosis_hint">Diagnosis</string>
+    
+    
+    <string name="mobile_phone_label">Mobile</string>
+    <string name="home_phone_label">Home</string>
+    <string name="work_phone_label">Work</string>    
+    <string name="address_label">Address</string>
+    <string name="notes_label">Notes</string>
+    <string name="diagnosis_label">Diagnosis</string>
+    
+    <string name="cred_error_title">Set Credentials Error</string>
+    <string name="ok">OK</string>
+    <string name="add_patients">Please add patients to continue.</string>
+</resources>

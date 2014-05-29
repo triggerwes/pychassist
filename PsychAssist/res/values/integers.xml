@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="credLength">36</integer>
+    <integer name="phoneLength">14</integer>
+    <integer name="credInput">2</integer>
+</resources>

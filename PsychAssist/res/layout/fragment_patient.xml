@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+    android:fillViewport="true"
+    android:scrollbars="vertical" >
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textViewAddressLbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textViewHomeLbl"
+        android:layout_marginTop="22dp"
+        android:text="@string/address_label" />
+
+    <TextView
+        android:id="@+id/textViewAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textViewAddressLbl"
+        android:layout_alignBottom="@+id/textViewAddressLbl"
+        android:layout_alignLeft="@+id/textViewHome"
+        android:layout_alignParentRight="true"
+        android:hint="@string/address_hint" />
+
+    <TextView
+        android:id="@+id/textViewCity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textViewAddress"
+        android:layout_toRightOf="@+id/textViewHomeLbl"
+        android:hint="@string/city_hint" />
+
+    <TextView
+        android:id="@+id/textViewState"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewCity"
+        android:layout_below="@+id/textViewCity"
+        android:hint="@string/state_hint" />
+
+    <TextView
+        android:id="@+id/textViewZip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textViewState"
+        android:layout_alignBottom="@+id/textViewState"
+        android:layout_centerHorizontal="true"
+        android:hint="@string/zip_code_hint" />
+
+    <TextView
+        android:id="@+id/textViewDiagnosisLbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textViewState"
+        android:layout_marginTop="20dp"
+        android:text="@string/diagnosis_label" />
+
+    <TextView
+        android:id="@+id/textViewHomeLbl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewWorkPhoneLbl"
+        android:layout_marginTop="14dp"
+        android:layout_toLeftOf="@+id/textViewAddress"
+        android:text="@string/home_phone_label" />
+
+    <TextView
+        android:id="@+id/textViewHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textViewHomeLbl"
+        android:layout_alignBottom="@+id/textViewHomeLbl"
+        android:layout_toRightOf="@+id/textViewDiagnosisLbl"
+        android:hint="@string/home_hint" />
+
+    <TextView
+        android:id="@+id/textViewWorkPhoneLbl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewMobile"
+        android:layout_marginTop="16dp"
+        android:layout_toLeftOf="@+id/textViewWork"
+        android:text="@string/work_phone_label" />
+
+    <TextView
+        android:id="@+id/textViewMobileLbl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="48dp"
+        android:layout_toLeftOf="@+id/textViewEmail"
+        android:text="@string/mobile_phone_label"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/textViewWork"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textViewWorkPhoneLbl"
+        android:layout_alignBottom="@+id/textViewWorkPhoneLbl"
+        android:layout_toRightOf="@+id/textViewHomeLbl"
+        android:hint="@string/work_hint" />
+
+    <TextView
+        android:id="@+id/textViewMobile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textViewMobileLbl"
+        android:layout_alignBottom="@+id/textViewMobileLbl"
+        android:layout_alignLeft="@+id/textViewWork"
+        android:hint="@string/mobile_hint" />
+
+    <TextView
+        android:id="@+id/textViewEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textViewMobile"
+        android:layout_alignLeft="@+id/textViewMobile"
+        android:layout_marginBottom="14dp"
+        android:hint="@string/email_hint" />
+
+    <TextView
+        android:id="@+id/textViewNotesLbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textViewDiagnosis"
+        android:layout_marginTop="15dp"
+        android:text="@string/notes_label" />
+
+    <TextView
+        android:id="@+id/textViewEmailLbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textViewEmail"
+        android:layout_alignBottom="@+id/textViewEmail"
+        android:layout_alignParentLeft="true"
+        android:text="@string/email_hint" />
+
+    <TextView
+        android:id="@+id/textViewDiagnosis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewDiagnosisLbl"
+        android:layout_marginTop="17dp"
+        android:layout_toRightOf="@+id/textViewAddressLbl"
+        android:hint="@string/diagnosis_hint" />
+
+    <TextView
+        android:id="@+id/textViewNotes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewNotesLbl"
+        android:layout_marginTop="16dp"
+        android:layout_toRightOf="@+id/textViewAddressLbl"
+        android:hint="@string/notes_hint" />
+
+</RelativeLayout>
+</ScrollView>
