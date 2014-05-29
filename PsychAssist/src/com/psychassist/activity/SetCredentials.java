@@ -284,26 +284,26 @@ public class SetCredentials extends Activity {
 			if (response.trim().length() > 0) {
 				try {
 					JSONObject resp = new JSONObject(response);
-					Log.d(TAG,response);
+					
 					if (resp.getString("result").equals("error")) {
 						JSONObject err = new JSONObject(resp.getString("error"));
 						throw new Exception(err.getString("message"));
-					} 
-					
-					 
-				} catch (JSONException je) { 
+					}
+
+				} catch (JSONException je) {
 					PatientList.setJsonPatients(response);
 					mPatients = setPatients(response);
 					PatientList.setPatients(mPatients);
 					dialog.dismiss();
-	                Intent patientList=new Intent(getApplicationContext(),PatientListActivity.class);
-	                startActivity(patientList);
-					//finish();
+					Intent patientList = new Intent(getApplicationContext(),
+							PatientListActivity.class);
+					startActivity(patientList);
+					// finish();
 				} catch (Exception e) {
-					Log.d(TAG, "Error happened:=" + response + e.getMessage());
-					  showDialog( e.getMessage() + " Please contact app maker if problem persists");
-					  rollBackPreferences();
-					  dialog.dismiss();
+					showDialog(e.getMessage()
+							+ " Please verify and retype credentials");
+					rollBackPreferences();
+					dialog.dismiss();
 				}
 			} else {
 				  showDialog("Please contact app maker if problem persists");
